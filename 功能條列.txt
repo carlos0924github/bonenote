@@ -31,6 +31,8 @@
 
 SQLite
 http://mobilesiri.com/android-sqlite-database-tutorial-using-android-studio/ 
+dialog
+http://blog.xuite.net/viplab/blog/241319945-%5BAndroid%5DAlertDialog(%E5%8A%A0%E5%85%A5%E6%8C%89%E9%88%95%E3%80%81%E5%8A%A0%E5%85%A5List%E4%BB%A5%E5%8F%8A%E5%A1%9E%E5%85%A5%E4%B8%80%E5%80%8BLayout)
 
 
 事件資料庫綱要
