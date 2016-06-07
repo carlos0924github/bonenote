@@ -15,14 +15,14 @@
      1.4.2 使用者可以點擊切換至骨頭人主要狀態頁面     
 2. 骨頭人養成系統
   2.1 圖鑑
-     2.1.1 使用者可以查看已開啟或未開啟的型態
+     2.1.1 使用者可以查看已開啟或未開啟的型態 (boneID, boneName, boneTyoe, boneBkgd)
   2.2 任務
      2.2.1 條列式 (新增事件 完成事件 開啟APP)
      2.2.2 午夜12點更新任務項目
   2.3 詳細狀態
-     2.3.1 HP (會死)
-     2.3.2 EXP 
-     2.3.3 大頭貼
+     2.3.1 HP (會死) (boneHp)
+     2.3.2 EXP  (boneExp)
+     2.3.3 大頭貼 (boneID)
      2.3.4 成長背景、種類
   2.4 進化
      2.4.1 使用者點擊後可以抉擇是否進化
@@ -37,16 +37,31 @@ http://blog.xuite.net/viplab/blog/241319945-%5BAndroid%5DAlertDialog(%E5%8A%A0%E
 
 事件資料庫綱要
 Event Schema
-Name	  Type	Key
-id	  INT	PRI
-topic	  TEXT	
-content	  TEXT
-address	  TEXT
-category  TEXT
-weight	  INT
-time	  TEXT
-remind	  INT
-success   INT
+Name	        Type	    Key
+_id	          INTEGER	  PRI
+title	        TEXT      NOT NULL	
+content	      TEXT      
+time	        TEXT      
+address	      TEXT      
+phone         TEXT
+type          TEXT
+remind        INTGER
+success       INTEGER
+lastmodify    INTEGER
+
+Book Schema
+boneID            INTEGER     KEY
+boneName          TEXT        NOT NULL
+boneType          TEXT
+boneBkgd          TEXT
+UserID            INTEGER     NOT NULL  (→ boneID)
+UserHp            INTEGER
+UserExp           INTEGER
+missionID         INTEGER     NOT NULL
+missionName       TEXT
+missionContent    TEXT
+missionSuccess    INTEGER
+
 
 ViewList
 http://www.allenj.net/article/post/237
