@@ -54,13 +54,9 @@ boneID            INTEGER     KEY
 boneName          TEXT        NOT NULL
 boneType          TEXT
 boneBkgd          TEXT
-UserID            INTEGER     NOT NULL  (→ boneID)
+UserID            INTEGER     NOT NULL  
 UserHp            INTEGER
 UserExp           INTEGER
-missionID         INTEGER     NOT NULL
-missionName       TEXT
-missionContent    TEXT
-missionSuccess    INTEGER
 
 
 ViewList
